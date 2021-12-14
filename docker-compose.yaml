@@ -1,0 +1,10 @@
+version: '2'
+services:
+  busylight_mqtt:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: busylight_mqtt
+    restart: unless-stopped
+    devices:
+    - "/dev/hidraw0:/dev/hidraw0"
