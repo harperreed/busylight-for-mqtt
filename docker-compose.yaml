@@ -6,5 +6,6 @@ services:
       dockerfile: Dockerfile
     container_name: busylight_mqtt
     restart: unless-stopped
+    privileged: true
     devices:
-    - "/dev/hidraw0:/dev/hidraw0"
+      - '/dev:/dev'
