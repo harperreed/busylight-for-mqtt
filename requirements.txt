@@ -1,2 +1,2 @@
 paho.mqtt
-busylight
+busylight-for-humans
